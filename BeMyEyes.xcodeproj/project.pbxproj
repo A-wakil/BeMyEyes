@@ -14,6 +14,8 @@
 		AB1F8A132D7780FC003CF62A /* BeMyEyesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1F8A122D7780FC003CF62A /* BeMyEyesTests.swift */; };
 		AB1F8A1D2D7780FC003CF62A /* BeMyEyesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1F8A1C2D7780FC003CF62A /* BeMyEyesUITests.swift */; };
 		AB1F8A1F2D7780FC003CF62A /* BeMyEyesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1F8A1E2D7780FC003CF62A /* BeMyEyesUITestsLaunchTests.swift */; };
+		ABA5998C2D79092800B6F386 /* FameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA5998B2D79092800B6F386 /* FameView.swift */; };
+		ABA5998E2D79096900B6F386 /* FrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA5998D2D79096900B6F386 /* FrameHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		AB1F8A182D7780FC003CF62A /* BeMyEyesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeMyEyesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1F8A1C2D7780FC003CF62A /* BeMyEyesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeMyEyesUITests.swift; sourceTree = "<group>"; };
 		AB1F8A1E2D7780FC003CF62A /* BeMyEyesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeMyEyesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ABA5998B2D79092800B6F386 /* FameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FameView.swift; sourceTree = "<group>"; };
+		ABA5998D2D79096900B6F386 /* FrameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,10 @@
 			children = (
 				AB1F8A012D7780FA003CF62A /* BeMyEyesApp.swift */,
 				AB1F8A032D7780FA003CF62A /* ContentView.swift */,
+				ABA5998B2D79092800B6F386 /* FameView.swift */,
 				AB1F8A052D7780FC003CF62A /* Assets.xcassets */,
 				AB1F8A072D7780FC003CF62A /* Preview Content */,
+				ABA5998D2D79096900B6F386 /* FrameHandler.swift */,
 			);
 			path = BeMyEyes;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			files = (
 				AB1F8A042D7780FA003CF62A /* ContentView.swift in Sources */,
 				AB1F8A022D7780FA003CF62A /* BeMyEyesApp.swift in Sources */,
+				ABA5998E2D79096900B6F386 /* FrameHandler.swift in Sources */,
+				ABA5998C2D79092800B6F386 /* FameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +433,9 @@
 				DEVELOPMENT_TEAM = 3C4T9ZXP3R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera required for visualization";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -455,7 +465,9 @@
 				DEVELOPMENT_TEAM = 3C4T9ZXP3R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera required for visualization";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
