@@ -12,10 +12,17 @@ struct FrameView: View {
     private let label = Text("frame")
     
     var body: some View {
-        if let image = image {
-            Image(image, scale: 1.0, orientation: .up, label: label)
-        } else {
-            Color.black
+        GeometryReader { geometry in
+            if let image = image {
+                Image(image, scale: 1.0, orientation: .up, label: label)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                    .clipped()
+            } else {
+                Color.black
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+            }
         }
     }
 }
